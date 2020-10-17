@@ -1,0 +1,97 @@
+.root {
+  width: 100%;
+  position: relative;
+  height: 40vw;
+  margin-top: 5vw;
+  overflow: hidden;
+  cursor: none;
+}
+
+.imageLayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.layer1Left {
+  background-image: url('/images/1943/layer1-left-hedgehog.png');
+  background-size: 45%;
+  background-position: left 113%;
+  transform: translateX(-2.3vw);
+}
+
+.layer1Right {
+  background-image: url('/images/1943/layer1-right-hedgehog.png');
+  background-size: 22%;
+  background-position: right 105%;
+}
+
+.layer2Tank {
+  background-image: url('/images/1943/layer2-tank.png');
+  background-size: 67%;
+  background-position: right center;
+  pointer-events: all;
+  clip-path: polygon(
+    49.04% 75.07%,
+    44.44% 61.39%,
+    42.8% 59.22%,
+    45% 47.63%,
+    50.33% 44.65%,
+    54.9% 37.45%,
+    57.34% 33.33%,
+    32.61% 33.9%,
+    32.86% 26.63%,
+    63.31% 25.26%,
+    64.47% 22.55%,
+    73.92% 19.31%,
+    74.54% 15.54%,
+    82.02% 15.95%,
+    86.83% 34.34%,
+    100% 33.26%,
+    100% 75.68%
+  );
+}
+
+.layer2Ground {
+  background-image: url('/images/1943/layer2-ground.png');
+  background-size: 100%;
+  background-position: center bottom;
+  transform: scale(1.06);
+}
+
+.layer3Tank {
+  background-image: url('/images/1943/layer3-tank.png');
+  background-size: 20%;
+  background-position: 9% 63%;
+}
+
+.layer3Ground {
+  background-image: url('/images/1943/layer3-ground.png');
+  background-size: 100%;
+  background-position: center bottom;
+  transform: scale(1.04);
+}
+
+.layer4Trees {
+  background-image: url('/images/1943/layer4-trees.png');
+  background-size: 100%;
+  background-position: center bottom;
+  transform: scale(1.03);
+}
+
+.hammer {
+  position: absolute;
+  width: 3vw;
+  visibility: hidden;
+  transform-origin: center 70%;
+  pointer-events: none;
+}

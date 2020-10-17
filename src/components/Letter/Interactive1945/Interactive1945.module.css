@@ -1,0 +1,89 @@
+.root {
+  position: relative;
+  width: 100%;
+  height: 41vw;
+}
+
+.imageLayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.layer1 {
+  background-image: url('/images/1945/layer1.png');
+  background-position: center 160%;
+  transform: scale(1.05);
+}
+
+.layer2 {
+  background-image: url('/images/1945/layer2.png');
+  background-position: center 96%;
+  transform: scale(1.05);
+}
+
+.layer3 {
+  background-image: url('/images/1945/layer3.png');
+  background-position: center top;
+  transform: scale(1.05);
+}
+
+.glare {
+  opacity: 0;
+  background-image: url('/images/1945/glare.png');
+  background-repeat: no-repeat;
+  background-size: 30%;
+  width: 100%;
+  height: 60%;
+  transform: translate(4.8%, 4.8%) scale(1.095);
+  position: absolute;
+  mask-image: url('/images/1945/layer3.png');
+}
+
+.canvas {
+  width: 100%;
+  height: 73%;
+  position: absolute;
+  top: -4vw;
+  pointer-events: all;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 37.71%,
+    73.84% 49.7%,
+    69.91% 39.57%,
+    66.74% 37.18%,
+    63.09% 41.35%,
+    59.26% 51.44%,
+    50.29% 64.66%,
+    49.92% 47.39%,
+    49.11% 40.92%,
+    48.31% 47.87%,
+    47.88% 65.27%,
+    43.84% 66%,
+    26.26% 73.18%,
+    20.78% 75.7%,
+    20.26% 85.26%,
+    14.86% 86.48%,
+    15.13% 63.39%,
+    12.81% 56.65%,
+    12.55% 36.26%,
+    11.85% 30.31%,
+    11.15% 35.92%,
+    10.78% 57.35%,
+    8.83% 62.17%,
+    8.99% 82.52%,
+    5.31% 83.04%,
+    5.16% 94.26%,
+    0% 95.26%
+  );
+}

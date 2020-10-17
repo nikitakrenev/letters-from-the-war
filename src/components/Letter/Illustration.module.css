@@ -1,0 +1,24 @@
+.root {
+  position: absolute;
+  width: 13vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.image {
+  width: 13vw;
+  height: 9vw;
+  background-size: cover;
+  opacity: 0.5;
+  box-shadow: inset 1vw 0 1vw black, inset -1vw 0 1vw black,
+    inset 0 1vw 1vw black, inset 0 -1vw 1vw black;
+  transform: translateX(-6%);
+}
+
+.text {
+  color: var(--color-accent-light);
+  width: 11vw;
+  font-size: 0.6rem;
+  line-height: 180%;
+}

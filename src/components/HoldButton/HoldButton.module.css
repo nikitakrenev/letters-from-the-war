@@ -1,0 +1,76 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  pointer-events: all;
+  position: relative;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s;
+}
+
+.normal {
+  width: 4vw;
+  min-width: 4vw;
+  height: 4vw;
+  min-height: 4vw;
+  font-size: 1.1rem;
+}
+
+.small {
+  width: 3vw;
+  min-width: 3vw;
+  height: 3vw;
+  min-height: 3vw;
+  font-size: 1rem;
+}
+
+.scale {
+  transform: scale(1.25);
+}
+
+.button {
+  position: absolute;
+  font-family: var(--font-cursive);
+  font-size: inherit;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonText {
+  pointer-events: none;
+}
+
+.circleSvg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.sectorSvg {
+  stroke: none;
+  fill: black;
+}
+
+.pathStatic {
+  fill: none;
+  stroke: white;
+  stroke-width: 1.5px;
+}
+
+.pathGrowing {
+  fill: none;
+  stroke: red;
+  stroke-width: 1.5px;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+}

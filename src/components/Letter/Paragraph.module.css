@@ -1,0 +1,47 @@
+.paragraph,
+.aside {
+  line-height: 180%;
+  margin: 0 0 10vw 0;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+}
+
+.smallerMargin {
+  margin: 0 0 4vw 0;
+}
+
+.censored {
+  margin: 5vw 0 10vw 0;
+  position: relative;
+  white-space: pre-line;
+}
+
+.censored::before {
+  content: '';
+  position: absolute;
+  background-image: url(./censored.png);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 2.1vw;
+  left: -4%;
+}
+
+.censored::after {
+  content: '';
+  position: absolute;
+  left: 0vw;
+  top: -8vw;
+  display: inline-block;
+  width: 2px;
+  height: 6vw;
+  background-color: var(--color-accent);
+}
+
+.aside {
+  color: var(--color-accent-light);
+  font-size: 0.9rem;
+  width: 75%;
+  position: relative;
+}

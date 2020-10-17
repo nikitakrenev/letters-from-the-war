@@ -1,0 +1,99 @@
+.root {
+  --offsetLayer1Right: 0.7vw;
+  --offsetLayer3Right: 4.35vw;
+  --offsetLayer3Left: calc(var(--offsetLayer3Right) * -1);
+  --offsetLayer4Right: -3vw;
+  --heightOffset: -14vw;
+  width: 100%;
+  height: calc(49vw + var(--heightOffset));
+  position: relative;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 49vw;
+  transform: translateY(var(--heightOffset));
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.imageLayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.layer1Right {
+  background-image: url('/images/1942/layer1-right.png');
+  background-position: right bottom;
+  background-size: 40%;
+  transform: translateX(var(--offsetLayer1Right));
+}
+
+.layer2Center {
+  background-image: url('/images/1942/layer2-center.png');
+  background-position: center bottom;
+  background-size: 100%;
+  transform: scaleX(1.1);
+}
+
+.layer3Left {
+  background-image: url('/images/1942/layer3-left.png');
+  background-position: left top;
+  background-size: 62%;
+  transform: translateX(var(--offsetLayer3Left));
+}
+
+.layer3Right {
+  background-image: url('/images/1942/layer3-right.png');
+  background-position: right 70%;
+  background-size: 40%;
+  transform: translateX(var(--offsetLayer3Right));
+}
+
+.layer4Right {
+  background-image: url('/images/1942/layer4-right.png');
+  background-position: 15% 44%;
+  background-size: 41%;
+  transform: translateX(var(--offsetLayer4Right));
+}
+
+.ball {
+  position: absolute;
+  bottom: 15%;
+  left: 35%;
+  width: 4vw;
+  height: 4vw;
+  background: linear-gradient(red, yellow, red);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.ballShade {
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  background: radial-gradient(ellipse at left top, transparent 40%, black 100%);
+  pointer-events: none;
+}
+
+.ballShadow {
+  position: absolute;
+  bottom: 14%;
+  left: 35%;
+  width: 4vw;
+  height: 1vw;
+  background-color: black;
+  border-radius: 50%;
+  filter: blur(0.2vw);
+}

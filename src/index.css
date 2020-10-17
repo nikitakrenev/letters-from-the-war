@@ -1,0 +1,76 @@
+@import-normalize;
+
+html {
+  --color-accent: #fd2828;
+  --color-accent-light: #d25757;
+  --color-text: #b4b4b4;
+  --color-text-light: #fdfdfd;
+  --color-text-dark: #989898;
+  --color-outro-text-dark: #000000;
+  --color-outro-text-light: #818181;
+  --color-outro-text-lightest: #eeeeee;
+
+  --font-normal: 'PT Root UI', sans-serif;
+  --font-cursive: 'Nothing You Could Do', cursive;
+
+  font-size: 1vw;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-text) black;
+}
+
+html::-webkit-scrollbar {
+  width: 7px;
+}
+
+html::-webkit-scrollbar-track {
+  background: black;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--color-text);
+}
+
+body {
+  font-family: var(--font-normal);
+  color: var(--color-text);
+  background-color: black;
+
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+button {
+  border: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'PT Root UI';
+  src: url('/fonts/pt-root-ui-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Nothing You Could Do';
+  src: url('/fonts/nothing-you-could-do.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NK169';
+  src: url('/fonts/nk169.otf') format('opentype');
+}

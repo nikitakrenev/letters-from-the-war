@@ -1,0 +1,92 @@
+.root {
+  --heightOffset: -7vw;
+  position: relative;
+  width: 100%;
+  height: calc(49vw + var(--heightOffset));
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 49vw;
+  transform: translateY(var(--heightOffset));
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateY(var(--heightOffset));
+  pointer-events: all;
+}
+
+.imageLayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.layer1 {
+  background-image: url('/images/1941/layer1-aerostat.png');
+  background-position: 130% 80%;
+  background-size: 54%;
+}
+
+.layer2 {
+  background-image: url('/images/1941/layer2-buildings.png');
+  background-position: left 500%;
+  background-size: 92%;
+  transform: translateX(-2.3vw);
+}
+
+.layer3 {
+  background-image: url('/images/1941/layer3-buildings.png');
+  background-position: 120% 160%;
+  background-size: 58%;
+}
+
+.layer4 {
+  background-image: url('/images/1941/layer4-aerostats.png');
+  background-position: center top;
+  background-size: 100%;
+}
+
+.ray {
+  height: 68vw;
+  position: absolute;
+  bottom: -37%;
+  transform-origin: center bottom;
+  transition: transform ease-out;
+}
+
+.ray1 {
+  left: 15%;
+  transition-duration: 1800ms;
+}
+
+.ray2 {
+  width: 6vw;
+  left: 50%;
+  transition-duration: 2500ms;
+}
+
+.ray3 {
+  width: 6vw;
+  left: 70%;
+  transition-duration: 1500ms;
+}
+
+.plane {
+  width: 6vw;
+  position: absolute;
+}

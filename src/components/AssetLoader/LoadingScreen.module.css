@@ -1,0 +1,44 @@
+.root {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-family: var(--font-cursive);
+  font-size: 2rem;
+  color: var(--color-accent);
+  margin-top: 1vw;
+}
+
+.dot {
+  animation: pulse 3s cubic-bezier(0.86, 0, 0.07, 1) infinite alternate;
+}
+
+.dot1 {
+  composes: dot;
+  animation-delay: 0s;
+}
+
+.dot2 {
+  composes: dot;
+  animation-delay: 1s;
+}
+
+.dot3 {
+  composes: dot;
+  animation-delay: 2s;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

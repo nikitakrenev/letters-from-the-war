@@ -1,0 +1,45 @@
+.root {
+  position: relative;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: inherit;
+  pointer-events: all;
+}
+
+.root:focus {
+  outline: 0;
+}
+
+.eventCatcher {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.biggerArea {
+  width: 150%;
+  height: 150%;
+  transform: translate(-20%, -20%);
+}
+
+.wrapper {
+  display: inline-block;
+  pointer-events: none;
+}
+
+.wrapperFontSize {
+  transition: font-size 0.2s;
+}
+
+.wrapperTransform {
+  transition: transform 0.2s;
+}
+
+.wrapperHoverFontSize {
+  font-size: 75%;
+}
+
+.wrapperHoverTransform {
+  transform: scale(0.75);
+}

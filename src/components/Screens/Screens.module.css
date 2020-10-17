@@ -1,0 +1,36 @@
+.root {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.filmOverlay {
+  --spritesheetWidth: 10;
+  --spritesheetHeight: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--spritesheetWidth) * 100vw);
+  height: calc(var(--spritesheetHeight) * 100vh);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.outroButtonFade {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.outroButton {
+  position: absolute;
+  bottom: 1vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.outroButtonText {
+  white-space: pre-line;
+  text-align: center;
+  transform: translateY(-10%);
+}

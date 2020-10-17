@@ -1,0 +1,90 @@
+.root {
+  --spritesheetWidth: 10;
+  --spritesheetHeight: 4;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  pointer-events: all;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--spritesheetWidth) * 100vw);
+  height: calc(var(--spritesheetHeight) * 100vh);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.back {
+  position: absolute;
+  top: 2.5vw;
+  left: 75%;
+  font-family: var(--font-cursive);
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  z-index: 20;
+}
+
+.content {
+  height: 100vh;
+  position: absolute;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 10;
+}
+
+.leftColumn,
+.rightColumn {
+  flex-basis: 30%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.leftColumn {
+  padding-left: 7%;
+}
+
+.rightColumn {
+  padding-left: 5%;
+}
+
+.centerColumn {
+  flex-basis: 40%;
+}
+
+.date {
+  font-family: var(--font-cursive);
+  font-size: 2.5rem;
+  transform: translateY(-0.5vw);
+}
+
+.date p:nth-child(1) {
+  color: white;
+}
+
+.date p:nth-child(2) {
+  color: red;
+}
+
+.author {
+  font-size: 0.8rem;
+  line-height: 150%;
+  color: var(--color-text-light);
+  transform: translateY(0.5vw);
+}
+
+.chooseAnother {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -4.5vw);
+  font-family: var(--font-cursive);
+  font-size: 1.2rem;
+  color: var(--color-text-light);
+}

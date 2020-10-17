@@ -1,0 +1,13 @@
+.root {
+  position: absolute;
+  top: 2.5vw;
+  left: 2.5vw;
+  font-family: var(--font-cursive);
+  text-align: left;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.hover {
+  color: var(--color-accent);
+}

@@ -1,0 +1,10 @@
+.root {
+  opacity: 0;
+}
+
+.inherit {
+  width: inherit;
+  height: inherit;
+  position: inherit;
+  pointer-events: none;
+}

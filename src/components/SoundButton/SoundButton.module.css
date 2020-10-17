@@ -1,0 +1,33 @@
+.root {
+  position: absolute;
+  left: 2.5vw;
+  bottom: 2.5vw;
+}
+
+.svg {
+  stroke-width: 2px;
+  width: 1.5vw;
+  transition: stroke 2s;
+}
+
+.white {
+  stroke: white;
+}
+
+.black {
+  stroke: black;
+}
+
+.path {
+  animation: pulse 1s ease-in-out infinite alternate;
+  transform-origin: center center;
+}
+
+@keyframes pulse {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0.7);
+  }
+}

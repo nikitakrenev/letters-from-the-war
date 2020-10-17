@@ -1,0 +1,6 @@
+.cursor {
+    position: fixed;
+    font-family: var(--font-cursive);
+    font-size: 1.8rem;
+    line-height: 110%;
+}
